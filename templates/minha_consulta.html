@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block content %}
+    <p>
+        A Presente vistoria visa notificar as condições estruturais do Imóvel residencial, situado a RUA {{form.rua.value}}, {{form.numero.value}} -  
+        Indaiatuba-SP. <br>
+        <b>Locador: </b>{{form.nome_proprietário.value}}, inscrito no CPF(MF) nº {{form.cpf_proprietario.value}};
+        sendo sua Administradora: PAULO DONIZETI CANOVA 
+        Administração de Imoveis - ME.  (Lopes Alphavilly), empresa privada inscrita no CRECI Juridico sob no. 33.156J,
+        sediada na Rua Tocantins, 341 – V. Feres - Indaiatuba-SP, aqui na qualidade de ADMINISTRADORA DE IMÓVEL, ora representada por 
+        PAULO DONIZETI CANOVA, brasileiro, maior, casado, advogado, inscrito na OABSP. 
+        Sob n° 117.975, residente e domiciliado nesta cidade de Indaiatuba-SP.
+        <br>
+        <b>Locatário:</b> {{form.nome_locatario.value}}, inscrito no CPF(MF) nº {{form.cpf_locatario.value}}
+        <br>
+        <b>Fiador:</b> {{form.nome_fiador.value}}, inscrito no CPF(MF) nº {{form.cpf_fiador.value}}
+        <br> 
+        
+    </p>
+    <br>
+    <b>Descrição da entrada: </b>
+    <p>{{ form.entrada.value }}</p>
+
+    <b>Descrição da sala: </b>
+    <p>{{ form.sala.value }}</p>
+
+    <b>Descrição da copa: </b>
+    <p>{{ form.copa.value }}</p>
+
+    <b>Descrição da cozinha: </b>
+    <p>{{ form.cozinha.value }}</p>
+
+    <b>Descrição do corredor interno: </b>
+    <p>{{ form.corredor_interno.value }}</p>
+
+    <b>Descrição do WC social:</b>
+    <p> {{ form.wc_social.value }}</p>
+
+    <b>Descrição do dormitório I:</b>
+    <p>{{ form.dormitorio_um.value }}</p>
+
+    <b>Descrição do dormitório II:</b>
+    <p> {{ form.dormitorio_dois.value }}</p>
+
+    <b>Descrição do dormitório III:</b>
+    <p>{{ form.dormitorio_tres.value }}</p>
+
+    <b>Descrição do dormitório IIII:</b>
+    <p>{{ form.dormitorio_quatro.value }}</p>
+
+    <b>Descrição da suíte:</b>
+    <p>{{ form.suite.value }}</p>
+
+    <b>Descrição do WC da suíte:</b>
+    <p>{{ form.wc_suite.value }}</p>
+
+    <b>Descrição do corredor externo:</b>
+    <p>{{ form.corredor_externo.value }}</p>
+
+    <b>Descrição do piso superior:</b>
+    <p>{{ form.piso_superior.value }}</p>
+
+    <b>Observações:</b>
+    <p>{{ form.observacoes.value }}</p>
+
+    
+
+{% endblock %}
